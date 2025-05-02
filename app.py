@@ -2,11 +2,8 @@ import streamlit as st
 import pickle 
 import numpy as np
 
-with open("prediction_app_files/xgboost_best_model.pkl", "rb") as file:
+with open("xgboost_best_model.pkl", "rb") as file:
     model = pickle.load(file)
-
-# Display the image
-st.image("prediction_app_files/4Cs-of-Diamond-The-Definitive-Guide.png", use_container_width=True)
 
 # Title of the app
 st.title("Diamond Price Prediction App")
